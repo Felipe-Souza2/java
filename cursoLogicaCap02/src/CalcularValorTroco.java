@@ -1,4 +1,4 @@
-package cursoLogicaCap02;
+
 
 import java.util.Scanner;
 
