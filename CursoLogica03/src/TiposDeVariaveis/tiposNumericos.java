@@ -1,6 +1,6 @@
 package TiposDeVariaveis;
 
-public class TiposNumericos {
+public class tiposNumericos {
 	
 	public static void main(String[] args) {
 		Byte numeroBytee = 13;  // Essa variavel armazena de -128 até 127 ,nada acima disso

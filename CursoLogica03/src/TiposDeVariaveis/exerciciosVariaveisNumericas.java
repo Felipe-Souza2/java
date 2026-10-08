@@ -2,7 +2,7 @@ package TiposDeVariaveis;
 import java.util.Scanner;
 
 
-public class ExerciciosVariaveisNumericas {
+public class exerciciosVariaveisNumericas {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner (System.in);
 		

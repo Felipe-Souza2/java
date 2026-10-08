@@ -3,7 +3,7 @@ package TiposDeVariaveis;
 import java.util.Scanner;
 
 
-public class ExercicioVariavelLogica {
+public class exercicioVariavelLogica {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		
@@ -17,5 +17,7 @@ public class ExercicioVariavelLogica {
 		} else {
 			System.out.println("Não passou!");
 		}
+		
+		scanner.close();
 	}
 }

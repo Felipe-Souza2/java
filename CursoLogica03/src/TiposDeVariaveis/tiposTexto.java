@@ -2,7 +2,7 @@ package TiposDeVariaveis;
 
 import java.util.Scanner;
 
-public class TiposTexto {
+public class tiposTexto {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		
