@@ -1,17 +1,17 @@
-package TiposDeVariaveis;
+package tiposDeVariaveis;
 
 import java.util.Scanner;
 
-public class exercicioDeConstantes {
-	static final Integer NOTA_MINIMA = 70;
+
+public class exercicioVariavelLogica {
 	
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.print("Digite a nota do aluno:");
+		System.out.println("Digite a nota do aluno:");
 		int notaAluno = scanner.nextInt();
 		
-		Boolean resultado = notaAluno >= NOTA_MINIMA;
+		Boolean resultado = notaAluno >= 70;
 		
 		if (resultado) {
 			System.out.println("passou!");

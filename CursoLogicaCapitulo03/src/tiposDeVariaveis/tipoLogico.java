@@ -1,4 +1,4 @@
-package TiposDeVariaveis;
+package tiposDeVariaveis;
 
 public class tipoLogico {
 	public static void main(String[] args) {

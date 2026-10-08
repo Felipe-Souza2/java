@@ -1,4 +1,4 @@
-package TiposDeVariaveis;
+package tiposDeVariaveis;
 import java.util.Scanner;
 
 

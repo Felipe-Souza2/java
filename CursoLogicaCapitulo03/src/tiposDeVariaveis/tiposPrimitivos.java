@@ -1,10 +1,10 @@
-package TiposDeVariaveis;
+package tiposDeVariaveis;
 
 public class tiposPrimitivos {  //todos os valores primitivos diferente do "normais com letra maiuscula" não trabalham com valores nulos(null).
 	public static void main(String[] args) {
 		byte numeroBytee = 1; 
 
-		short numeroShort = null; // errado  
+		Short numeroShort = null; // errado  
 		
 		Integer  numeroInteger = 1; 
 		
