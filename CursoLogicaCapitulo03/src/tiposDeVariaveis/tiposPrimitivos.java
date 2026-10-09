@@ -4,7 +4,7 @@ public class tiposPrimitivos {  //todos os valores primitivos diferente do "norm
 	public static void main(String[] args) {
 		byte numeroBytee = 1; 
 
-		Short numeroShort = null; // errado  
+		Short numeroShort = null;  
 		
 		Integer  numeroInteger = 1; 
 		
