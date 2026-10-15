@@ -55,7 +55,6 @@ public class escolhendoBonsNomes {
 		
 		iterarEExibirPosicoesDoVetor(formasPagamento);
 		
-		
 		Integer posicaoFormaPagamentoEscolhida = receberIndiceUsuario(formasPagamento, "Sua forma de pagamento escolhida é: ", scanner);
 		
 		return formasPagamento[posicaoFormaPagamentoEscolhida];
