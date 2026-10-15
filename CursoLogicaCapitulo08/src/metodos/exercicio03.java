@@ -7,7 +7,7 @@ public class exercicio03 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		
-		Double numeroEsquerda = infomarNumero(scanner);
+		Double numeroDireito = infomarNumero(scanner);
 		
 		imprimirTraco();
 		
@@ -15,7 +15,7 @@ public class exercicio03 {
 		
 		imprimirTraco();
 		
-		Double numeroDireito = infomarNumero(scanner);
+		Double numeroEsquerda = infomarNumero(scanner);
 		
 		imprimirTraco();
 		
@@ -33,10 +33,16 @@ public class exercicio03 {
 		
 		switch (operacao) {
 		
-		case 0: resultado = subtracao(esquerda, direita);
+		case 0: resultado = adicao(esquerda, direita);
 		break;
 		
-		case 1: resultado = adicao(esquerda, direita);
+		case 1: resultado = subtracao(esquerda, direita);
+		break;
+		
+		case 2: resultado = divisao(esquerda, direita);
+		break;
+
+		case 3: resultado = multiplicacao(esquerda, direita);
 		break;
 		
 		default: 
@@ -56,10 +62,18 @@ public class exercicio03 {
 		return (esquerda- direita);
 	}
 	
+	static Double multiplicacao(Double direita, Double esquerda) {
+		return (esquerda * direita);
+	}
+	
+	static Double divisao(Double direita, Double esquerda) {
+		return (esquerda / direita);
+	}
+		
 	static Integer escolhaOperacao(Scanner scanner) {
 		System.out.println("Escolha uma operação");
 		
-		String[] operacoes = new String[] {"Subtração", "Adição"};
+		String[] operacoes = new String[] {"Adição", "Subtração", "Divisão", "Multiplicação"};
 		
 		for (int i = 0 ; i < operacoes.length ; i++) {
 			System.out.println("[" + i + "]" + operacoes[i]);
@@ -70,7 +84,7 @@ public class exercicio03 {
 	}
 	
 	static Double infomarNumero(Scanner scanner) {
-		System.out.print("Informe o número: ");
+		System.out.print("Informe um número: ");
 		return scanner.nextDouble();
 	}
 	static void imprimirTraco() {

@@ -16,7 +16,7 @@ public class retornandoValores {
 		iterarEExibirPosicoesDoVetor(cursos);
 
 		
-		Integer posicaoCursoEscolhido = receberNumeroUsuario(null, scanner);
+		Integer posicaoCursoEscolhido = receberNumeroUsuario("O curso que vc deseja é: ", scanner);
 		
 		Boolean posicaoValida =  tratativaComBoolean(posicaoCursoEscolhido, cursos);
 
@@ -52,8 +52,14 @@ public class retornandoValores {
 	}
 	
 	static void iterarEExibirPosicoesDoVetor(String[] vetor) {
-		for(int i = 0; i < vetor.length; i++) {
-			imprimir("[" + i + "] " + vetor[i]);
+		iterarEExibirPosicoesDoVetor(vetor, 0);
+	}
+	
+	static void iterarEExibirPosicoesDoVetor(String[] vetor, Integer i) {
+		imprimir("[" + i + "] " + vetor[i]);
+		
+		if (++i < vetor.length) {
+			iterarEExibirPosicoesDoVetor(vetor, i);
 		}
 	}
 	
