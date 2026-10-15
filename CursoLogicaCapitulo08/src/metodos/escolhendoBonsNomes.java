@@ -22,7 +22,6 @@ public class escolhendoBonsNomes {
 		scanner.close();
 	}
 	
-	
 	static String receberInfoUsuario(Scanner scanner) {
 		
 		String[] cursos = new String[] {"Java EE", "Spring", "Java OO Avançado"};
@@ -37,8 +36,6 @@ public class escolhendoBonsNomes {
 		return cursos[posicaoCursoEscolhido];
 	}
 	
-	
-	
 	static Integer receberIndiceUsuario(String[] vetor, String texto, Scanner scanner) {
 		Integer posicaoEscolhida = receberNumeroUsuario(texto, scanner);
 		
@@ -50,7 +47,6 @@ public class escolhendoBonsNomes {
 		
 		return posicaoEscolhida;
 	}
-	
 	
 	static String receberInfoPagamentoUsuario(Scanner scanner) {
 		String[] formasPagamento = new String[] {"Cartão", "Boleto"};
