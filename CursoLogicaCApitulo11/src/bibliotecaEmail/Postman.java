@@ -8,7 +8,7 @@ import org.apache.commons.mail2.javax.SimpleEmail;
 public class Postman {
 	
 	static void listaTarefas(String para, String assunto, String mensagem) throws EmailException {
-		String usuario = "seu gmaa@gmail.com";
+		String usuario = "seu gmail@gmail.com";
 		String senhaDeApp = "sua senha app";
 		
 		Email email = new SimpleEmail();
