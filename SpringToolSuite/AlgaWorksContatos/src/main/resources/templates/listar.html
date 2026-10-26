@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns="http://www.thymeleaf.org">
+	xmlns:th="http://www.thymeleaf.org">
 	<head>
 		<meta charset="utf-8" />
 		<meta nome="viewport" content="width=device-width"/>
 		
 		<title>AlgaWorks</title>
 		
-		<link rel="stylesheet" href="@{/css/estilo.css}" />
+		<link rel="stylesheet" th:href="@{/css/estilo.css}" />
 		
 	</head>	
 	<body>
 		<header>
 			<nav>
 				<ul>
-					<li><a href="@{/}">AlgaWorks</a></li>
-					<li><a href="@{/contatos}">Listar</a></li>
-					<li><a href="@{/contatos/novo}">Novo</a></li>
+					<li><a th:href="@{/}">AlgaWorks</a></li>
+					<li><a th:href="@{/contatos}">Listar</a></li>
+					<li><a th:href="@{/contatos/novo}">Novo</a></li>
 				</ul>
 			</nav>
 		</header>
-	</body>
 	<main>
 		<section>
 			<h1>Lista de contatos</h1>
@@ -45,8 +44,9 @@
 						<td><a th:href="@{/contatos/{contato}/editar(contato=${contato.id})}">Editar</a></td>	
 						
 						<td>
-							<form th:href="@{/contatos/{contato}/editar(contato=${contato.id})}"
+							<form th:action="@{/contatos/{contato}/editar(contato=${contato.id})}"
 							method="delete">
+							<button>Remover</button>
 							</form>
 						</td>				
 				</tbody>
@@ -54,4 +54,5 @@
 		</section>
 	</main>
 
+	</body>
 </html>

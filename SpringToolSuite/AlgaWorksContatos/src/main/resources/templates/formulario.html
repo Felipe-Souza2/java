@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns="http://www.thymeleaf.org">
+	xmlns:th="http://www.thymeleaf.org">
 	<head>
 		<meta charset="utf-8" />
 		<meta nome="viewport" content="width=device-width"/>
 		
 		<title>AlgaWorks</title>
 		
-		<link rel="stylesheet" href="@{/css/estilo.css}" />
+		<link rel="stylesheet" th:href="@{/css/estilo.css}" />
 		
 	</head>	
 	<body>
 		<header>
 			<nav>
 				<ul>
-					<li><a href="@{/}">AlgaWorks</a></li>
-					<li><a href="@{/contatos}">Listar</a></li>
-					<li><a href="@{/contatos/novo}">Novo</a></li>
+					<li><a th:href="@{/}">AlgaWorks</a></li>
+					<li><a th:href="@{/contatos}">Listar</a></li>
+					<li><a th:href="@{/contatos/novo}">Novo</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -27,7 +27,7 @@
 		
 		<section>
 			
-			<form action="${contato.novo} ? @{/contatos} : @{/contatos/{contato}(contato=${contato.id})}"
+			<form th:action="${contato.novo} ? @{/contatos} : @{/contatos/{contato}(contato=${contato.id})}"
 			th:object="${contato}" method="${contato.novo} ? post : put">
 			</form>
 			
