@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
@@ -32,12 +33,16 @@ public class ContatosControle {
 		return  modelAndView;
 	}
 	
-	
-	
-	
-	
 	@GetMapping("/contatos/novo") 
-	public String formulario() {
-		return  "formulario";
+	public ModelAndView novo() {
+		ModelAndView modelAndView = new  ModelAndView("formulario");
+		
+		modelAndView.addObject("contato", new Contato());
+		return  modelAndView;
+	}
+	
+	@PostMapping("/contatos")
+	public String cadastrar() {
+		return "";
 	}
 }
