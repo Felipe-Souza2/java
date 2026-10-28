@@ -44,8 +44,8 @@
 						<td><a th:href="@{/contatos/{contato}/editar(contato=${contato.id})}">Editar</a></td>	
 						
 						<td>
-							<form th:action="@{/contatos/{contato}/editar(contato=${contato.id})}"
-							method="delete">
+							<form th:action="@{/contatos/{contato}(contato=${contato.id})}"
+							th:method="delete">
 							<button>Remover</button>
 							</form>
 						</td>				
